@@ -1,0 +1,1233 @@
+<!DOCTYPE html><html lang="en"><head>
+<title> install.md</title>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="()">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<style type="text/css">
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+a {
+  color: #0088cc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #005580;
+  text-decoration: underline;
+}
+
+p {
+  margin: 0 0 1.1em;
+}
+
+small {
+  font-size: 85%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+cite {
+  font-style: normal;
+}
+
+
+h1.story_title {
+    margin: 0.7em 0;
+}
+.story_tags {
+    margin: 0 0 1.2em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.5em 0;
+    margin: 1.0em 0 .6em 0;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 20px;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 40px;
+}
+
+h1 {
+  font-size: 38.5px;
+}
+
+h2 {
+  font-size: 31.5px;
+}
+
+h3 {
+  font-size: 24.5px;
+}
+
+h4 {
+  font-size: 17.5px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 11.9px;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 10px 35px;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+
+dl {
+  margin-bottom: 20px;
+}
+
+dt,
+dd {
+  line-height: 20px;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 10px;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #ffffff;
+}
+
+abbr[title],
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #999999;
+}
+
+
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 20px;
+  border-left: 5px solid #dddddd;
+}
+
+blockquote p {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+blockquote small {
+  display: block;
+  line-height: 20px;
+  color: #999999;
+}
+
+blockquote small:before {
+  content: '\2014 \00A0';
+}
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+
+address {
+  display: block;
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 20px;
+}
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+    border: 1px solid rgba(34,36,38,.15);
+}
+.tag.label{
+display: inline-block;
+vertical-align: baseline;
+line-height: 1;
+margin: 0.125em 0.125em;
+background-color: rgba(102,128,153,0.075);
+border-color: rgba(102,128,153,0.075);
+background-image: none;
+padding: 0.6em 0.8em;
+color: rgba(0, 0, 0, 0.6);
+text-transform: none;
+font-weight: bold;
+border-radius: 0.2857rem;
+box-sizing: border-box;
+font-size: 0.7428rem;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+
+.table th {
+  font-weight: bold;
+}
+
+.table thead th {
+  vertical-align: bottom;
+}
+
+.table caption + thead tr:first-child th,
+.table caption + thead tr:first-child td,
+.table colgroup + thead tr:first-child th,
+.table colgroup + thead tr:first-child td,
+.table thead:first-child tr:first-child th,
+.table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+
+.table .table {
+  background-color: #ffffff;
+}
+
+
+.table-striped tbody > tr:nth-child(odd) > td,
+.table-striped tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}
+
+tr { page-break-inside: avoid; }
+
+.story_image_container{
+   page-break-inside: avoid;
+}
+
+.xsj_underline{
+    page-break-after: always;
+    visibility: hidden;
+}
+
+.table-celled.table tr td,.table-celled.table tr th {
+    border-left: 1px solid rgba(34,36,38,.1)
+}
+
+.table-celled.table tr td:first-child,.table-celled.table tr th:first-child {
+    border-left: none
+}
+
+.toc ul {
+    list-style: none;
+}
+p {
+    line-height: 1.6;
+}
+body>p {
+  margin-bottom: 1.8em;
+}
+body>p>img.center,
+body>p>a>img.center {
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(128,128,128,0.3);
+}
+body {
+    font-family: 'Helvetica Neue', Helvetica, Tahoma, Arial, 'Hiragino Sans GB', STHeiti, "Microsoft YaHei", "微软雅黑", 'WenQuanYi Micro Hei', STXihei, "华文细黑", Heiti, "黑体", SimSun, "宋体", Song, sans-serif;
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: 100;
+//  line-height: 1.8em;
+  color: #2f2f2f;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+em.cjk_emphasis{
+    font-style: normal;
+    font-family: Georgia,"Times New Roman",Times,"楷体","AR PL UKai CN", "NSimSun","Songti SC","SimSun",serif!important;
+}
+body dt,
+body dd {
+  line-height: 1.35em;
+}
+body code, body .xiaoshujiang_code {
+//  background-color: #D6DBDF;
+    border: 0;
+  border-radius: 4px;
+//  color: #2C3E50;
+  font-size: 90%;
+//  padding: 2px 4px;
+}
+code {
+    background-color: rgba(214, 219, 223, 0.28);
+    border-radius: 4px;
+    color: #2C3E50;
+    padding: 2px 4px;
+}
+.xiaoshujiang_code ol{
+    margin-bottom: 0px;
+}
+body h1 {
+  line-height: 1.6;
+}
+body h2 {
+  line-height: 1.1;
+}
+body h3 {
+  line-height: 1.1;
+}
+
+.hljs, .hljs * {
+  overflow: visible !important;
+} 
+
+/**
+ * Treeview syntax highlighting based on highlight.js
+ * Copyright (c) 2014-2015, Asciidocfx Team, (MIT Licensed)
+ * https://github.com/asciidocfx/highlight-treeview.js
+ */
+.language-treeview.hljs{
+  position: relative;
+}
+.hljs-folder,
+.hljs-hiddenfile,
+.hljs-file {
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    height: 16px;
+}
+.hljs-folder:before,
+.hljs-file:before,
+.hljs-hiddenfile:before {
+    top: 0;
+    content: '';
+    width: 14px;
+    height: 12px;
+    margin-top: 0px;
+    margin-right: 3px;
+    position: relative;
+    display: inline-block;
+    background-size: 14px;
+    background-repeat: no-repeat;
+}
+.hljs-file:before,
+.hljs-hiddenfile:before {
+    height: 14px;
+    margin-left: 1px;
+}
+.hljs-hiddenfile {
+    opacity: 0.6;
+}
+.hljs-file.photo:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f1c5";
+}
+.hljs-file.plain:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f016";
+}
+.hljs-file.source:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f1c9";
+}
+.hljs-file.archive:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f1c6";
+}
+.hljs-file.audio:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f1c7";
+}
+.hljs-file.video:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f1c8";
+}
+.hljs-file.pdf:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f1c1";
+}
+.hljs-file.xls:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f1c3";
+}
+.hljs-file.doc:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f1c2";
+}
+.hljs-file.ppt:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f1c4";
+}
+.hljs-folder:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f114";
+}
+.hljs-hiddenfile:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f016";
+}
+.hljs-tvline {
+    margin-left: 6px;
+    position: absolute;
+    text-indent: -99em;
+    padding-bottom: 8px;
+    vertical-align: top;
+    display: inline-block;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: rgb(94, 144, 117);
+}
+.hljs-folder-branch {
+    width: 8px;
+    height: 8px;
+    margin-top: -1px;
+    margin-left: 6px;
+    text-indent: -99em;
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(94, 144, 117);
+}
+.hljs-folder-branch.win {
+    width: 14px;
+    margin-right: 2px;
+}
+.hljs-folder-last-branch {
+    height: 7px;
+    width: 7px;
+    margin-left: 6px;
+    text-indent: -99em;
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(94, 144, 117);
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: rgb(94, 144, 117);
+}
+.hljs-folder-last-branch.win {
+    width: 13px;
+    margin-right: 2px;
+}
+
+
+/**
+ * Treeview syntax highlighting based on highlight.js
+ */
+
+
+.mark{
+    border: 0;
+  background-color: rgba(221, 243, 231, 0.4);
+  border-radius: 4px;
+  color: #29754d;
+  font-size: 90%;
+  padding: 2px 4px;
+}
+.line_mark{
+    border: 1px dashed #3A4C42;
+    margin-top: 2px;
+}
+code .mark, .xiaoshujiang_code .mark{
+    border-radius: 0px;
+    font-size: initial;
+    padding: initial;
+}
+a.attachment{
+    background-color: #ecf0f3;
+    border: 1px solid #bec6cb;
+    display: inline-block;
+    padding: 5px;
+    margin: 2px;
+    min-width: 250px;
+}
+a.attachment i.fa{
+    font-size: 3em;
+  float: left;
+  margin-right: 0.2em;
+}
+a.attachment .filename{
+    vertical-align: top;
+  text-align: left;
+  font-weight: bold;
+}
+a.attachment .filesize{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  opacity: .6;
+  font-size: 80%;
+  white-space: nowrap;
+}
+.checkbox .checked{
+    text-decoration: line-through;
+}
+.flow-chart, .sequence-diagram{
+    text-align: center;
+}
+.plot, .plot-image{
+    text-align: center;
+    min-height: 200px;
+    min-width: 200px;
+}
+
+pre, .xiaoshujiang_pre {
+    line-height: initial !important;
+    word-wrap: break-word;
+    word-break: break-word;
+    tab-size: 4;
+    white-space: pre-wrap;
+}
+.xiaoshujiang_code_container pre{
+    margin: 0px;
+}
+.xiaoshujiang_code_container.xiaoshujiang_code_chunk{
+    box-shadow: 0 0 0 1px #A3C293 inset,0 0 0 0 transparent;
+    margin: 1em 0;
+    padding: 1em;
+}
+.xiaoshujiang_code_container.xiaoshujiang_code_chunk_hide_code{
+    box-shadow: initial;
+    padding: initial;
+    padding-bottom: 2em;
+}
+.xiaoshujiang_code_container .out_put{
+    box-shadow: 0 0 0 1px #A3C293 inset,0 0 0 0 transparent;
+    margin: 1em 0;
+    background-color: #FCFFF5;
+    color: #2C662D;
+    padding: 1em;
+}
+.xiaoshujiang_code_container .out_put_error{
+    background-color: #FFF6F6;
+    color: #9F3A38;
+    margin: 1em 0;
+    box-shadow: 0 0 0 1px #E0B4B4 inset,0 0 0 0 transparent;
+    padding: 1em;
+}
+
+.xiaoshujiang_pre {
+    font-family: monospace;
+}
+
+.story_align_left, .story_align_left .story_image_container {
+    text-align: left;
+}
+.story_align_right, .story_align_right .story_image_container {
+    text-align: right;
+}
+.story_align_center, .story_align_center .story_image_container {
+    text-align: center;
+}
+.story_align_justify, .story_align_justify .story_image_container {
+    text-align: justify;
+}
+
+
+/** 
+ * code line nums
+ */
+code.hljs.code_linenums, .xiaoshujiang_code.hljs.code_linenums{
+    position: relative;
+}
+.ol_linenums{
+    padding: 0px;
+    margin-left: 30px;
+    border-left: 1px solid #e0e0e0;
+}
+.li_linenum{
+    margin-left: 10px;
+    list-style: none;
+    counter-increment: lines 1;
+}
+.li_linenum.li_list_style{
+    list-style: inherit;
+    margin-left: 5px;
+}
+.li_linenum:before, .li_linenum_before_span{
+    content: counter(lines, decimal);
+  position: absolute;
+  left: 0px;
+  text-align: center;
+  width: 2.5em;
+  vertical-align: top;
+}
+.li_linenum_before_span_hide{
+    display: none;
+}
+.xiaoshujiang_code .code_line_break_hack{
+    margin:0;
+    border:0;
+    border-top:0;
+    border-bottom:0;
+}
+/** 
+ * code line nums
+ */
+.mathjax-container{
+    text-align: center;
+}
+div.mathjax{
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+text{
+    font-size: 14px;
+}
+
+/**
+ * block image
+ */
+
+.story_image_container{
+    text-align: center;
+}
+.story_image_container>.story_image{
+    display: inline-block;
+  position: relative;
+    max-width: 80%;
+}
+.story_image_caption{
+    border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 10px;
+}
+.story_image_blank_caption{
+    border-bottom: 0px;
+}
+/**
+.story_image:before, .story_image:after{
+    content: '';
+    position: absolute;
+    z-index: -2;
+    bottom: 13px;
+    left: 10px;
+    width: 50%;
+    height: 20%;
+    border-radius: 10px/90px;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.7);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+.story_image:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+
+**/
+.story_image>img{
+    border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);
+}
+.story_inline_image>img{
+    max-width: 50%;
+    vertical-align: bottom;
+}
+.story_remote_resource_block{
+    text-align: center;
+}
+.xiaoshujiang_code_container {
+    margin: 1em 0px;
+    position: relative;
+    padding-bottom: 2em;
+}
+
+
+.xiaoshujiang_code_title_container{
+    font-size: 70%;
+    opacity: 0.5;
+}
+.xiaoshujiang_code_title_container>.xiaoshujiang_code_infos{
+    float: right;
+}
+
+
+.task-list-item{
+    list-style: none;
+}
+.task-list-item.li_list_style{
+    list-style:inherit;
+}
+.task-list-item>input{
+    margin: 0 0 0 -20px;
+}
+.video_container{
+    width: 100%;
+    display: table;
+    text-align: center;
+    position: relative;
+    padding-bottom: 56.25%!important;
+}
+.slideshare_container .inner{
+    position: relative;
+    width: 100%;
+}
+.slideshare_container .inner iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.video_container iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    vertical-align: middle;
+}
+
+kbd{
+    display: inline-block;
+    padding: 3px 5px;
+    font-size: 11px;
+    line-height: 10px;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fcfcfc;
+    border: solid 1px #ccc;
+    border-bottom-color: #bbb;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.blank_anchor_id {
+    float: left;
+}
+.blank_anchor_id {
+    visibility: hidden;
+}
+.blank_anchor_id:before {
+    content: 'a';
+}
+
+blockquote footer{
+    margin: 1em 0;
+    font-style: italic;
+}
+
+blockquote footer cite {
+    margin: 0 1em;
+}
+/*wavedrom start*/
+
+.wavedrom_svg text, .wavedrom_svg_defs text {
+    font-size:11pt;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    font-stretch:normal;
+    text-align:center;
+    fill-opacity:1;
+    font-family:Helvetica
+}
+.wavedrom_svg .muted, .wavedrom_svg_defs .muted {
+    fill:#aaa
+}
+.wavedrom_svg .warning, .wavedrom_svg_defs .warning {
+    fill:#f6b900
+}
+.wavedrom_svg .error, .wavedrom_svg_defs .error {
+    fill:#f60000
+}
+.wavedrom_svg .info, .wavedrom_svg_defs .info {
+    fill:#0041c4
+}
+.wavedrom_svg .success, .wavedrom_svg_defs .success {
+    fill:#00ab00
+}
+.wavedrom_svg .h1, .wavedrom_svg_defs .h1 {
+    font-size:33pt;
+    font-weight:bold
+}
+.wavedrom_svg .h2, .wavedrom_svg_defs .h2 {
+    font-size:27pt;
+    font-weight:bold
+}
+.wavedrom_svg .h3, .wavedrom_svg_defs .h3 {
+    font-size:20pt;
+    font-weight:bold
+}
+.wavedrom_svg .h4, .wavedrom_svg_defs .h4 {
+    font-size:14pt;
+    font-weight:bold
+}
+.wavedrom_svg .h5, .wavedrom_svg_defs .h5 {
+    font-size:11pt;
+    font-weight:bold
+}
+.wavedrom_svg .h6, .wavedrom_svg_defs .h6 {
+    font-size:8pt;
+    font-weight:bold
+}
+.wavedrom_svg_defs .s1 {
+    fill:none;
+    stroke:#000;
+    stroke-width:1;
+    stroke-linecap:round;
+    stroke-linejoin:miter;
+    stroke-miterlimit:4;
+    stroke-opacity:1;
+    stroke-dasharray:none
+}
+.wavedrom_svg_defs .s2 {
+    fill:none;
+    stroke:#000;
+    stroke-width:0.5;
+    stroke-linecap:round;
+    stroke-linejoin:miter;
+    stroke-miterlimit:4;
+    stroke-opacity:1;
+    stroke-dasharray:none
+}
+.wavedrom_svg_defs .s3 {
+    color:#000;
+    fill:none;
+    stroke:#000;
+    stroke-width:1;
+    stroke-linecap:round;
+    stroke-linejoin:miter;
+    stroke-miterlimit:4;
+    stroke-opacity:1;
+    stroke-dasharray:1,3;
+    stroke-dashoffset:0;
+    marker:none;
+    visibility:visible;
+    display:inline;
+    overflow:visible;
+    enable-background:accumulate
+}
+.wavedrom_svg_defs .s4 {
+    color:#000;
+    fill:none;
+    stroke:#000;
+    stroke-width:1;
+    stroke-linecap:round;
+    stroke-linejoin:miter;
+    stroke-miterlimit:4;
+    stroke-opacity:1;
+    stroke-dasharray:none;
+    stroke-dashoffset:0;
+    marker:none;
+    visibility:visible;
+    display:inline;
+    overflow:visible
+}
+.wavedrom_svg_defs .s5 {
+    fill:#fff;
+    stroke:none
+}
+.wavedrom_svg_defs .s6 {
+    color:#000;
+    fill:#ffffb4;
+    fill-opacity:1;
+    fill-rule:nonzero;
+    stroke:none;
+    stroke-width:1px;
+    marker:none;
+    visibility:visible;
+    display:inline;
+    overflow:visible;
+    enable-background:accumulate
+}
+.wavedrom_svg_defs .s7 {
+    color:#000;
+    fill:#ffe0b9;
+    fill-opacity:1;
+    fill-rule:nonzero;
+    stroke:none;
+    stroke-width:1px;
+    marker:none;
+    visibility:visible;
+    display:inline;
+    overflow:visible;
+    enable-background:accumulate
+}
+.wavedrom_svg_defs .s8 {
+    color:#000;
+    fill:#b9e0ff;
+    fill-opacity:1;
+    fill-rule:nonzero;
+    stroke:none;
+    stroke-width:1px;
+    marker:none;
+    visibility:visible;
+    display:inline;
+    overflow:visible;
+    enable-background:accumulate
+}
+.wavedrom_svg_defs .s9 {
+    fill:#000;
+    fill-opacity:1;
+    stroke:none
+}
+.wavedrom_svg_defs .s10 {
+    color:#000;
+    fill:#fff;
+    fill-opacity:1;
+    fill-rule:nonzero;
+    stroke:none;
+    stroke-width:1px;
+    marker:none;
+    visibility:visible;
+    display:inline;
+    overflow:visible;
+    enable-background:accumulate
+}
+.wavedrom_svg_defs .s11 {
+    fill:#0041c4;
+    fill-opacity:1;
+    stroke:none
+}
+.wavedrom_svg_defs .s12 {
+    fill:none;
+    stroke:#0041c4;
+    stroke-width:1;
+    stroke-linecap:round;
+    stroke-linejoin:miter;
+    stroke-miterlimit:4;
+    stroke-opacity:1;
+    stroke-dasharray:none
+}
+
+
+/*wavedrom stop*/
+
+.mermaid_svg{
+font-family: monospace;
+}
+
+@media print{
+  body{
+  word-wrap: break-word;
+  word-break: break-word;
+  background: initial;
+}
+}
+
+/*
+
+Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #fdf6e3;
+  color: #657b83;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #93a1a1;
+}
+
+/* Solarized Green */
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-addition {
+  color: #859900;
+}
+
+/* Solarized Cyan */
+.hljs-number,
+.hljs-string,
+.hljs-meta .hljs-meta-string,
+.hljs-literal,
+.hljs-doctag,
+.hljs-regexp {
+  color: #2aa198;
+}
+
+/* Solarized Blue */
+.hljs-title,
+.hljs-section,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #268bd2;
+}
+
+/* Solarized Yellow */
+.hljs-attribute,
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-class .hljs-title,
+.hljs-type {
+  color: #b58900;
+}
+
+/* Solarized Orange */
+.hljs-symbol,
+.hljs-bullet,
+.hljs-subst,
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-link {
+  color: #cb4b16;
+}
+
+/* Solarized Red */
+.hljs-built_in,
+.hljs-deletion {
+  color: #dc322f;
+}
+
+.hljs-formula {
+  background: #eee8d5;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+
+
+</style>
+</head><body>
+<div><div class="preview" id="wmd-preview">
+
+	<div class="preview html_preview"><div class="xiaoshujiang_element xsj_anchor" style="position: absolute;">
+  <a name="goblet20e5bfabe9809fe585a5e997a8_1" class="blank_anchor_name"></a><a id="goblet20e5bfabe9809fe585a5e997a8_1" class="blank_anchor_id"></a><a name="goblet-快速入门" class="blank_anchor_name"></a><a id="goblet-快速入门" class="blank_anchor_id"></a>
+</div>
+<h1>goblet 快速入门</h1>
+<hr class="xsj_minus">
+<div class="xiaoshujiang_element xsj_anchor" style="position: absolute;">
+  <a name="goblete5ae89e8a385e58d87e7baa7_2" class="blank_anchor_name"></a><a id="goblete5ae89e8a385e58d87e7baa7_2" class="blank_anchor_id"></a><a name="goblet安装升级" class="blank_anchor_name"></a><a id="goblet安装升级" class="blank_anchor_id"></a>
+</div>
+<h2>goblet安装升级</h2>
+<div class="xiaoshujiang_element xsj_anchor" style="position: absolute;">
+  <a name="e8a681e6b182_3" class="blank_anchor_name"></a><a id="e8a681e6b182_3" class="blank_anchor_id"></a><a name="要求" class="blank_anchor_name"></a><a id="要求" class="blank_anchor_id"></a>
+</div>
+<h3>要求</h3>
+<ul>
+<li>安装 Go</li>
+<li>设置 GOPATH 环境变量
+<ul>
+<li>可以将三方包与项目代码一起放在src下</li>
+</ul>
+<div class="xiaoshujiang_code_container"><pre><code data-info="" class="nohighlight hljs">	GOPATH
+		bin
+		pkg
+		src
+			thirdPartPkg
+			controller
+			project
+				main.go			
+</code></pre></div>
+<ul>
+<li>可以将三方包与项目代码一起放在src下，并将整个项目放在一个单独目录下</li>
+</ul>
+<div class="xiaoshujiang_code_container"><pre><code data-info="" class="nohighlight hljs">GOPATH
+	bin
+	pkg
+	src
+		thirdPartPkg
+		project
+			controller
+			start
+				main.go				
+</code></pre></div>
+<ul>
+<li>可以设置两级GOPATH，一级三方通用目录，一级项目独立目录</li>
+</ul>
+<div class="xiaoshujiang_code_container"><pre><code data-info="" class="nohighlight hljs">	GOPATH=$GOPATH1:GOPATH2
+	GOPATH1
+		src
+			thirdPartPkg
+
+	GOPATH2
+		src
+			project
+</code></pre></div>
+<ul>
+<li>三种方式各有其优点，不做推荐，本文采用第三种方式</li>
+</ul>
+</li>
+</ul>
+<div class="xiaoshujiang_element xsj_anchor" style="position: absolute;">
+  <a name="goblete5ae89e8a385_4" class="blank_anchor_name"></a><a id="goblete5ae89e8a385_4" class="blank_anchor_id"></a><a name="goblet安装" class="blank_anchor_name"></a><a id="goblet安装" class="blank_anchor_id"></a>
+</div>
+<h3>goblet安装</h3>
+<p>goblet 的安装是典型的 Go 安装包的形式：</p>
+<p><code>go get github.com/extrame/goblet</code></p>
+<p>常见问题：</p>
+<ul>
+<li>
+<p>git 没有安装，请自行安装不同平台的 git，如何安装请自行搜索</p>
+</li>
+<li>
+<p>git https 无法获取，请配置本地的 git，关闭 https 验证：</p>
+<p><code>git config --global http.sslVerify false</code></p>
+</li>
+<li>
+<p>无法上网怎么安装 golbet，目前没有好的办法</p>
+</li>
+</ul>
+<hr class="xsj_minus">
+<div class="xiaoshujiang_element xsj_anchor" style="position: absolute;">
+  <a name="goblete58d87e7baa7_5" class="blank_anchor_name"></a><a id="goblete58d87e7baa7_5" class="blank_anchor_id"></a><a name="goblet升级" class="blank_anchor_name"></a><a id="goblet升级" class="blank_anchor_id"></a>
+</div>
+<h3>goblet升级</h3>
+<p>goblet 升级分为 go 方式升级和源码下载升级：</p>
+<ul>
+<li>
+<p>Go 升级,通过该方式用户可以升级 goblet 框架，强烈推荐该方式：<br>
+<code>go get -u github.com/extrame/goblet</code></p>
+</li>
+<li>
+<p>源码下载升级，用户访问 <a href="https://github.com/extrame/goblet">https://github.com/extrame/goblet</a> ,下载源码，然后覆盖到 <code>$GOPATH/src/github.com/extrame/goblet</code> 目录，然后通过本地执行安装就可以升级了：<br>
+<code>go install github.com/extrame/goblet</code></p>
+</li>
+</ul>
+<div class="xiaoshujiang_element xsj_anchor" style="position: absolute;">
+  <a name="e7ae80e58d95e4b8bee4be8b_6" class="blank_anchor_name"></a><a id="e7ae80e58d95e4b8bee4be8b_6" class="blank_anchor_id"></a><a name="简单举例" class="blank_anchor_name"></a><a id="简单举例" class="blank_anchor_id"></a>
+</div>
+<h2>简单举例</h2>
+<ul>
+<li>
+<p>此例子是一个最简单的web 服务的例子，将开启8080端口，可用http get 访问 <a href="http://localhost:8080/api/test">http://localhost:8080/api/test</a> ，会得到一个hello world 的返回。</p>
+</li>
+<li>
+<p>至于不使用nginx和apache，也能显示出来html页面，可以查看下一个进阶例子</p>
+</li>
+<li>
+<p>项目目录<br>
+project</p>
+<ul>
+<li>test.conf</li>
+<li>test.go</li>
+</ul>
+</li>
+</ul>
+<p>若要运行：<br>
+<code>go run test.go</code></p>
+<ul>
+<li>test.conf</li>
+</ul>
+<div class="xiaoshujiang_code_container"><pre><code data-info="" class="nohighlight hljs">[basic]
+env = "development"
+port = 8080
+version="0.0.1"
+</code></pre></div>
+<p>详细功能可通过后续内容获得</p>
+<ul>
+<li>test.go</li>
+</ul>
+<div class="xiaoshujiang_code_container"><pre><code data-info="" class="nohighlight hljs">package main
+
+import (
+	"github.com/extrame/goblet"
+)
+
+type Test struct {
+	goblet.Route  "/api/test"
+	goblet.Render "json"
+}
+
+func (t *Test) ReadMany(cx *goblet.Context) {
+	cx.AddRespond("hello", "world")
+	cx.RespondOK()
+}
+
+func main() {
+	server := goblet.Organize("test")
+	server.ControlBy(&amp;Test{})
+	server.Run()
+
+}
+
+</code></pre></div>
+<p></p><div class="story_image_container story_block_image"><div class="story_image"><img src="data:image/png;base64,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EXa0u7s3ZSqHXfj+KaV973R0V9X3FcuBDa+81j7suml3jM9mene//tPWAX2L0hnjnF1V/Z13TPk4LDPDylJKo7901zfH72rdvHnDT1u31N/5tVtGXcA5AfhN6/8Jr5MPNLW373ns8ccOHTr8m5vNad1zQbc533TjjSmll5vP+Yv8fz733IYNG/ft3z8IEx0k9fX127dvL5VK59qhVCpt3779PA+3H//VXzN5QtpT2Np1fGtxa6GYmTC5JtVMqDl1e0oppa49O4uVU2fdd+vkCTUTJk+uPnO0cznXWVJKqXLCrfc9/Nd//eDk4srnC70pk8mkrq6uswzStf9g77DqyuPNnR09MnOs+4PulKrGjsx07Tvx7jedHft6K0ePrrjw/Y8Xy/jxI1JK6ciBUldm7PVfunrsyJEjR1VnzvoD9cG+fd1DqqqrTtt86jhp6JCyIceO9Z7yHaoaVTmkq/RBJvuxirLjr5WNvPr6L3995rTqrnfe7jh65rEAXDkDerj98tTPpXRPSqmpqamiouK1115bs2btma+uWbO278ade74xoCWfy2PatGllZWXLly8/1w7Lly8vKyubNm3a2V6szlX37lndvLUzpepbZ91eue6ph5asLhTebH7i0SU7c3fNmppJ1bfPujWz7onvPbFyXaFQeHP1up29qTJXU9315vNL123duXPn1j1dZ452Luc6y551K5vf3Lpz585CodDZW1ldmUk1k2vS1pXPrn6z8Obq1YXOlA7vaF763EubDqTq2tHDOre8sal934EDe3e98Yvd3ZVjx45IaehVU66p7Hxr7S92dXTsWPt6a/eoKfWjU7rg/dO+3R3dVeOPr9WUZUcM69276Re79u47cKCzq/fjq13HDr6z4e1dHR3t215/5a39w665tva0FdBPjJNS9ajqIftb39rRsbdj1469h1OqGH99baa4YdXat3d17N3bsWvbjr1HUkqp1P72jo69+w7s6+jY330sU1Yx9MxjAbhyhvz5ny8YyH6ZzGdubrh58+bN7e17Nm/edHPDzZnMZwZxHpfYPX0zrKqq2rhx48aNG/f/av/nPjeq78mprVu3vfDiiy+++FJKae7990+ZcvoNvef3wosvppTOdY3s/K+eave775753kJDhw6trKz8x3/8x9bW1gkTJpSXl/e9m3NKqVQq/fjHP37//ffvueeec1z4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RPoAAIFIHwAgEOkDAAQifQCAQKQPABCI9AEAApE+AEAg0gcACET6AACBSB8AIBDpAwAEIn0AgECkDwAQiPQBAAKRPgBAINIHAAhE+gAAgUgfACAQ6QMABCJ9AIBApA8AEIj0AQACkT4AQCDSBwAIRPoAAIFIHwAgEOkDAAQifQCAQKQPABCI9AEAApE+AEAg0gcACET6AACBSB8AIBDpAwAEIn0AgECkDwAQiPQBAAKRPgBAINIHAAhE+gAAgUgfACAQ6QMABCJ9AIBApA8AEIj0AQACkT4AQCDSBwAIRPoAAIFIHwAgEOkDAAQifQCAQKQPABCI9AEAApE+AEAg0gcACET6AACBSB8AIBDpAwAEIn0AgECkDwAQiPQBAAKRPgBAINIHAAhE+gAAgUgfACAQ6QMABCJ9AIBApA8AEIj0AQACkT4AQCDSBwAIRPoAAIFIHwAgEOkDAAQifQCAQKQPABCI9AEAApE+AEAg0gcACET6AACBSB8AIBDpAwAEIn0AgECkDwAQiPQBAAKRPgBAINIHAAhE+gAAgUgfACAQ6QMABCJ9AIBApA8AEIj0AQACkT4AQCDSBwAIRPoAAIFIHwAgEOkDAAQifQCAQKQPABCI9AEAApE+AEAg0gcACET6AACBSB8AIBDpAwAEIn0AgECkDwAQiPQBAAKRPgBAINIHAAhE+gAAgUgfACAQ6QMABCJ9AIBApA8AEIj0AQACkT4AQCDSBwAIRPoAAIFIHwAgEOkDAAQifQCAQKQPABCI9AEAApE+AEAg0gcACET6AACBSB8AIBDpAwAEIn0AgECkDwAQiPQBAAKRPgBAINIHAAhE+gAAgUgfACAQ6QMABCJ9AIBApA8AEIj0AQACkT4AQCDSBwAIRPoAAIFIHwAgEOkDAAQifQCAQKQPABCI9AEAApE+AEAg0gcACET6AACBSB8AIBDpAwAEIn0AgECkDwAQiPQBAAKRPgBAINIHAAhE+gAAgUgfACAQ6QMABCJ9AIBApA8AEIj0AQACkT4AQCDSBwAIRPoAAIFIHwAgEOkDAAQifQCAQKQPABCI9AEAApE+AEAg0gcACET6AACBSB8AIBDpAwAEIn0AgECkDwAQiPQBAAKRPgBAINIHAAhE+gAAgUgfACAQ6QMABCJ9AIBApA8AEIj0AQACkT4AQCDSBwAIRPoAAIFIHwAgEOkDAAQifQCAQKQPABCI9AEAApE+AEAg0gcACET6AACBSB8AIBDpAwAEIn0AgECkDwAQiPQBAAKRPgBAINIHAAhE+gAAgUgfACAQ6QMABCJ9AIBApA8AEIj0AQACkT4AQCDSBwAIRPoAAIFIHwAgEOkDAAQifQCAQKQPABCI9AEAApE+AEAg0gcACET6AACBSB8AIBDpAwAEIn0AgECkDwAQiPQBAAKRPgBAINIHAAhE+gAAgUgfACAQ6QMABCJ9AIBApA8AEIj0AQACkT4AQCDSBwAIRPoAAIFIHwAgEOkDAAQifQCAQKQPABCI9AEAApE+AEAg0gcACET6AACBSB8AIBDpAwAEIn0AgECkDwAQiPQBAAKRPgBAINIHAAhE+gAAgUgfACAQ6QMABCJ9AIBApA8AEIj0AQACkT4AQCDSBwAIRPoAAIFIHwAgEOkDAAQifQCAQKQPABCI9AEAApE+AEAg0gcACET6AACBSB8AIBDpAwAEIn0AgECkDwAQiPQBAAKRPgBAINIHAAhE+gAAgUgfACAQ6QMABCJ9AIBApA8AEIj0AQACkT4AQCDSBwAIRPoAAIFIHwAgEOkDAAQifQCAQKQPABCI9AEAApE+AEAg0gcACET6AACBSB8AIBDpAwAEIn0AgECkDwAQiPQBAAKRPgBAINIHAAhE+gAAgUgfACAQ6QMABCJ9AIBApA8AEIj0AQACkT4AQCDSBwAIRPoAAIFIHwAgEOkDAAQifQCAQKQPABCI9AEAApE+AEAg0gcACET6AACBSB8AIBDpAwAEIn0AgECkDwAQiPQBAAKRPgBAINIHAAhE+gAAgUgfACAQ6QMABCJ9AIBApA8AEIj0AQACkT4AQCDSBwAIRPoAAIFIHwAgEOkDAAQifQCAQKQPABCI9AEAApE+AEAg0gcACET6AACBSB8AIBDpAwAEIn0AgED+PwKSkOfZdVLLAAAAAElFTkSuQmCC" alt="结果显示" title="结果显示" name="helloWorld.png"></div><br><div class="story_image_caption ">结果显示</div></div><p></p>
+</div>
+
+</div></div>
+</body></html>
+
